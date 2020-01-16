@@ -8,11 +8,11 @@ CREATE TABLE departments (
   name VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE role (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE role_position (
+  id INT not null AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30) NOT NULL,
   salary DECIMAL(10, 3) NOT NULL,
-  department_id INT(10),
+  department_id INT(10) NOT NULL
 );
 
 CREATE TABLE employee (
@@ -23,6 +23,6 @@ CREATE TABLE employee (
   manager_id INT(10)
 );
 
-SELECT * FROM departments;
-select * from role;
-select * from employee;
+-- SELECT * FROM departments;
+-- SELECT * FROM role;
+-- SELECT * FROM employee;
